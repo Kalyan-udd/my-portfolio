@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalyan Sai Uddagiri | Portfolio</title>
+  <!-- Google Fonts - Poppins for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN for utility-first styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind CSS configuration for custom theme colors and font family
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'] // Custom font family
+          },
+          colors: {
+            primary: '#8B0000', // Primary color set to dark red
+            dark: '#000000' // Dark mode background color set to black
+          }
+        }
+      },
+      darkMode: 'class', // Enable dark mode based on 'dark' class on HTML element
+    };
+  </script>
+  <style>
+    /* Custom styling for photo cards with transition for hover effects */
+    .photo-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 0.5rem; /* Apply rounded corners to photo cards */
+    }
+    .photo-card:hover {
+      transform: scale(1.05); /* Slightly enlarge on hover */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    }
+  </style>
+</head>
+<body class="bg-white dark:bg-dark text-gray-900 dark:text-gray-100 font-sans">
+  <!-- Header Section -->
+  <header class="p-6 flex flex-col sm:flex-row justify-between items-center shadow-md dark:bg-dark bg-gray-100 rounded-b-lg">
+    <h1 class="text-3xl font-bold text-primary mb-4 sm:mb-0">Kalyan Sai Uddagiri</h1>
+    <!-- Theme Toggle Button -->
+    <button onclick="document.documentElement.classList.toggle('dark')" class="px-5 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-red-800 transition duration-300">Toggle Theme</button>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="max-w-6xl mx-auto p-6">
+    <!-- About Me Section -->
+    <section class="my-10 p-6 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-semibold text-primary mb-4 border-b-2 border-primary pb-2">About Me</h2>
+      <p class="mt-4 text-lg leading-relaxed">I'm a Mechanical Engineering student at NIT Agartala, passionate about blending core engineering with modern tech through coding and automation. Currently exploring Python and C, and integrating AI features into my learning journey. My goal is to apply interdisciplinary knowledge to solve real-world problems.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section class="my-10 p-6 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-semibold text-primary mb-4 border-b-2 border-primary pb-2">Educational Qualifications</h2>
+      <div class="mt-4">
+        <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100">Bachelor of Technology in Mechanical Engineering</h3>
+        <p class="text-lg text-gray-700 dark:text-gray-300">National Institute of Technology Agartala (NIT Agartala)</p>
+        <p class="text-md text-gray-600 dark:text-gray-400">Expected Graduation: May 2026</p>
+        <ul class="list-disc list-inside mt-2 text-md text-gray-700 dark:text-gray-300">
+          <li>Relevant Coursework: Thermodynamics, Fluid Mechanics, Machine Design, Manufacturing Processes, Engineering Drawing, Data Structures & Algorithms, Object-Oriented Programming (C++), Industrial Automation.</li>
+          <li>Academic Projects: (Add specific academic projects here, e.g., "Design of a XYZ mechanism," "FEA Analysis of ABC component")</li>
+        </ul>
+      </div>
+      <!-- You can add more educational entries if applicable (e.g., high school, other certifications) -->
+    </section>
+
+    <!-- Skills Section -->
+    <section class="my-10 p-6 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-semibold text-primary mb-4 border-b-2 border-primary pb-2">Skills</h2>
+      <ul class="list-disc list-inside mt-4 grid grid-cols-1 md:grid-cols-2 gap-2 text-lg">
+        <li class="mb-1">Python (Data Analysis, Automation)</li>
+        <li class="mb-1">C (Basics, Embedded Systems)</li>
+        <li class="mb-1">Arduino (Microcontroller Programming)</li>
+        <li class="mb-1">Bluetooth Module Integration (HC-05, HM-10)</li>
+        <li class="mb-1">Photography (Nature, Urban, Portraiture)</li>
+        <li class="mb-1">CAD Software (SolidWorks, AutoCAD - Basics)</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="my-10 p-6 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-semibold text-primary mb-4 border-b-2 border-primary pb-2">Projects</h2>
+      <div class="mt-6">
+        <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">Arduino Bluetooth-Controlled Car</h3>
+        <p class="text-md leading-relaxed">Designed and built a remote-controlled car utilizing an Arduino microcontroller, HC-05 Bluetooth module, and a custom smartphone application. Developed motor driver circuitry and implemented basic command protocols for precise directional control and speed adjustments. This project enhanced my understanding of embedded systems and wireless communication.</p>
+      </div>
+      <div class="mt-6">
+        <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">Python-Arduino Communication (In Progress)</h3>
+        <p class="text-md leading-relaxed">Currently developing Python scripts to establish robust serial communication with Arduino for real-time data exchange and advanced automation tasks. This project aims to create a versatile framework for controlling physical devices via Python, opening possibilities for IoT applications and data logging.</p>
+      </div>
+    </section>
+
+    <!-- Photography Section -->
+    <section class="my-10 p-6 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-semibold text-primary mb-4 border-b-2 border-primary pb-2">Photography</h2>
+      <p class="mb-6 text-lg leading-relaxed">A selection of my photographic work, exploring various themes and perspectives.</p>
+      <div class="mb-6 flex flex-wrap gap-2 justify-center">
+        <!-- Filter Buttons for Photography Gallery -->
+        <button onclick="filterPhotos('all')" class="px-5 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-red-800 transition duration-300 text-lg">All</button>
+        <button onclick="filterPhotos('nature')" class="px-5 py-2 bg-gray-600 text-white rounded-lg shadow-md hover:bg-gray-700 transition duration-300 text-lg">Nature</button>
+        <button onclick="filterPhotos('urban')" class="px-5 py-2 bg-gray-600 text-white rounded-lg shadow-md hover:bg-gray-700 transition duration-300 text-lg">Urban</button>
+        <button onclick="filterPhotos('misc')" class="px-5 py-2 bg-gray-600 text-white rounded-lg shadow-md hover:bg-gray-700 transition duration-300 text-lg">Miscellaneous</button>
+      </div>
+
+      <!-- Photo Gallery Grid -->
+      <div id="photo-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Photo Card 1 (Nature) - edd9874e-a1f1-4d99-8433-92d5596b53f4.jpg (Pink Lotus) -->
+        <div class="photo-card bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden" data-category="nature">
+          <img src="uploaded:edd9874e-a1f1-4d99-8433-92d5596b53f4.jpg-37f2d173-4c6d-4857-bbaa-79e73f7533c1" alt="Pink Lotus Flower" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg text-gray-800 dark:text-gray-100">Vibrant Bloom</h4>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">A striking close-up of a beautiful pink lotus flower.</p>
+          </div>
+        </div>
+        <!-- Photo Card 2 (Nature) - IMG_0046.heic (Green Foliage) -->
+        <div class="photo-card bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden" data-category="nature">
+          <img src="uploaded:IMG_0046.heic-704815a0-91ed-4609-bb99-27e80d41ee28" alt="Green Foliage" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg text-gray-800 dark:text-gray-100">Lush Greenery</h4>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">Intricate patterns of vibrant green leaves.</p>
+          </div>
+        </div>
+        <!-- Photo Card 3 (Urban) - IMG_0587.heic (Statue & Clouds) -->
+        <div class="photo-card bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden" data-category="urban">
+          <img src="uploaded:IMG_0587.heic-5ef6608f-e469-4155-b1c1-4b400382c268" alt="Statue and Cloudy Sky" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg text-gray-800 dark:text-gray-100">Campus Vista</h4>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">A scenic view of a statue against a dramatic sky, possibly within a campus.</p>
+          </div>
+        </div>
+        <!-- Photo Card 4 (Urban) - IMG_0639.heic (Street with Auto) -->
+        <div class="photo-card bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden" data-category="urban">
+          <img src="uploaded:IMG_0639.heic-dd4514c6-94b3-4fc3-8994-ae6a904f4ffa" alt="Street with Auto-rickshaw" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg text-gray-800 dark:text-gray-100">Sunset Street</h4>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">A quiet street scene at sunset, with buildings and an auto-rickshaw.</p>
+          </div>
+        </div>
+        <!-- Photo Card 5 (Urban) - IMG_1898.heic (Statue & Sunset) -->
+        <div class="photo-card bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden" data-category="urban">
+          <img src="uploaded:IMG_1898.heic-d5eedd74-23f9-4e5c-bbdd-99b87001d376" alt="Statue at Sunset" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg text-gray-800 dark:text-gray-100">Golden Hour Sculpture</h4>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">A statue bathed in the warm light of sunrise or sunset.</p>
+          </div>
+        </div>
+        <!-- Photo Card 6 (Urban) - IMG_1303.heic (Aerial City/Port) -->
+        <div class="photo-card bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden" data-category="urban">
+          <img src="uploaded:IMG_1303.heic-3babb50c-94b1-452d-b9a0-7de846810491" alt="Aerial Cityscape" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg text-gray-800 dark:text-gray-100">Industrial Coastline</h4>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">An aerial perspective of a bustling city and port area.</p>
+          </div>
+        </div>
+        <!-- Photo Card 7 (Urban) - IMG_1301.heic (Airport Tarmac) -->
+        <div class="photo-card bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden" data-category="urban">
+          <img src="uploaded:IMG_1301.heic-e24e32b3-0f4e-4a69-a56d-1d93247fe4ed" alt="Airport Tarmac" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg text-gray-800 dark:text-gray-100">Runway View</h4>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">A vast airport tarmac under a cloudy sky.</p>
+          </div>
+        </div>
+        <!-- Photo Card 8 (Urban) - IMG_3115.heic (Statue with Sunset) -->
+        <div class="photo-card bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden" data-category="urban">
+          <img src="uploaded:IMG_3115.heic-d68eb426-1d8f-4caf-a193-940a048036a7" alt="Statue against Sunset" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg text-gray-800 dark:text-gray-100">Vigilant Guardian</h4>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">A commanding statue overlooking a landscape at dusk.</p>
+          </div>
+        </div>
+        <!-- Photo Card 9 (Urban) - IMG_4224.heic (Charminar) -->
+        <div class="photo-card bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden" data-category="urban">
+          <img src="uploaded:IMG_4224.heic-5e3d4d5a-eae3-4271-a22e-9d9a22f7ee96" alt="Charminar" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg text-gray-800 dark:text-gray-100">Iconic Landmark</h4>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">The grand architecture of a historical monument.</p>
+          </div>
+        </div>
+        <!-- Photo Card 10 (Nature) - IMG_3872.heic (White Flowers) -->
+        <div class="photo-card bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden" data-category="nature">
+          <img src="uploaded:IMG_3872.heic-fbd03e66-d149-4d23-b8a1-2b5510975ca5" alt="White Flowers" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg text-gray-800 dark:text-gray-100">Delicate Blossoms</h4>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">A cluster of elegant white flowers against a dark background.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="my-10 p-6 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-semibold text-primary mb-4 border-b-2 border-primary pb-2">Contact Me</h2>
+      <p class="mt-4 text-lg leading-relaxed">Feel free to reach out to me for collaborations, questions, or just a friendly chat!</p>
+      <div class="mt-6 text-lg">
+        <p class="mb-2"><strong class="text-gray-800 dark:text-gray-100">Email:</strong> <a href="mailto:kalyansaiuddagiri22@gmail.com" class="text-primary hover:underline">kalyansaiuddagiri22@gmail.com</a></p>
+        <p class="mb-2"><strong class="text-gray-800 dark:text-gray-100">GitHub:</strong> <a href="https://github.com/kalyan-udd" class="text-primary hover:underline" target="_blank">github.com/kalyan-udd</a></p>
+        <p class="mb-2"><strong class="text-gray-800 dark:text-gray-100">LinkedIn:</strong> <a href="https://www.linkedin.com/in/Kalyan Sai Uddagiri" class="text-primary hover:underline" target="_blank">linkedin.com/in/Kalyan Sai Uddagiri</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="p-6 text-center text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-dark shadow-inner mt-10 rounded-t-lg">
+    <p>&copy; 2025 Kalyan Sai Uddagiri. All rights reserved.</p>
+    <p class="mt-2 text-sm">Connect with me on <a href="https://github.com/kalyan-udd" class="text-primary hover:underline">GitHub</a> | <a href="https://www.linkedin.com/in/Kalyan Sai Uddagiri" class="text-primary hover:underline">LinkedIn</a></p>
+  </footer>
+
+  <script>
+    /**
+     * JavaScript function to filter photos in the gallery based on category.
+     * It shows all photos if 'all' is selected, otherwise it shows only photos
+     * matching the specified category.
+     * @param {string} category - The category to filter by (e.g., 'nature', 'urban', 'all').
+     */
+    function filterPhotos(category) {
+      const gallery = document.getElementById('photo-gallery');
+      const photoCards = gallery.querySelectorAll('.photo-card');
+
+      photoCards.forEach(card => {
+        const cardCategory = card.dataset.category; // Get the category from data-category attribute
+        if (category === 'all' || cardCategory === category) {
+          card.style.display = 'block'; // Show the card
+        } else {
+          card.style.display = 'none'; // Hide the card
+        }
+      });
+
+      // Optional: Highlight the active filter button
+      const buttons = document.querySelectorAll('.mb-6 button');
+      buttons.forEach(button => {
+        // Remove highlighting from all buttons first
+        button.classList.remove('bg-primary', 'hover:bg-red-800');
+        button.classList.add('bg-gray-600', 'hover:bg-gray-700');
+
+        // Add highlighting to the active button
+        if (button.onclick.toString().includes(`filterPhotos('${category}')`)) {
+          button.classList.remove('bg-gray-600', 'hover:bg-gray-700');
+          button.classList.add('bg-primary', 'hover:bg-red-800');
+        }
+      });
+    }
+
+    // Initialize the gallery to show all photos on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      filterPhotos('all');
+    });
+  </script>
+</body>
+</html>
