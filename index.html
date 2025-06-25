@@ -35,6 +35,15 @@
       transform: scale(1.05); /* Slightly enlarge on hover */
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
     }
+    .text-stroke-white {
+      webkit-text-stroke: 1px white; /* For WebKit browsers (Chrome, Safari) */
+      text-stroke: 1px white; /* Standard property */
+      /* No need to set color to transparent as we want the red fill too */
+     }
+     /* Adjust the text color for the h1 and h2 elements to ensure the red fill remains */
+    .text-primary.text-stroke-white {
+      color: var(--primary); /* Ensures the text remains red */
+     }
   </style>
 </head>
 <body class="bg-white dark:bg-dark text-gray-900 dark:text-gray-100 font-sans">
